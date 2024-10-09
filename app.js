@@ -42,7 +42,7 @@ async function predict() {
 
     const leftProbability = prediction.find(p => p.className === "left").probability;
     const rightProbability = prediction.find(p => p.className === "right").probability;
-    const walkProbability = prediction.find(p => p.className === "Walk").probability;
+    const walkProbability = prediction.find(p => p.className === "walk").probability;
 
     // ควบคุมการเคลื่อนที่ของกล้อง
     const camera = document.querySelector('[camera]');
